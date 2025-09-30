@@ -92,7 +92,7 @@ export default function ServicesPage() {
   ]
 
   return (
-    <main className="text-white" style={{ fontFamily: 'NeueMontreal, Aeonik, new, sans-serif' }}>
+    <main className="text-white">
       {/* Hero / Intro */}
       <section className="relative min-h-[70vh] pt-28 pb-16 flex items-end">
         <div className="absolute inset-0 -z-20 overflow-hidden">

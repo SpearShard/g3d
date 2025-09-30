@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
@@ -62,7 +64,7 @@ body {
     rgb(var(--background-end-rgb))
   );
   min-height: 100vh;
-  font-family: 'Aeonik', 'NeueMontreal', 'new', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
 }
 
@@ -197,3 +199,25 @@ html {
 .body-text {
   @apply text-gray-400;
 }
+
+/* Compatibility shim: force existing arbitrary "font-[...]" utilities to use Montserrat.
+   These classnames were used throughout the codebase (for example: font-['scrib'],
+   font-['test'], font-['MonumentExtended'], font-['NeueMontreal'], font-['Aeonik'],
+   font-['dena'], font-['me'], font-['new']). Instead of changing every file right now,
+   this small override ensures Montserrat is used everywhere. These rules are
+   intentionally specific and use !important so they override existing utilities.
+   If you later want to canonicalize classnames, we can mass-rename them and remove
+   this shim.
+*/
+
+[class*="font-['scrib']"],
+[class*="font-['test']"],
+[class*="font-['MonumentExtended']"],
+[class*="font-['NeueMontreal']"],
+[class*="font-['Aeonik']"],
+[class*="font-['dena']"],
+[class*="font-['me']"],
+[class*="font-['new']"] {
+  font-family: 'Montserrat', sans-serif !important;
+}
+

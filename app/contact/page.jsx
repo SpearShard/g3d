@@ -66,7 +66,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen text-white relative overflow-hidden bg-gradient-to-br from-black via-[#0f0b0b] to-[#b91c1c]" style={{ fontFamily: 'NeueMontreal, Aeonik, new, sans-serif' }}>
+    <div className="min-h-screen text-white relative overflow-hidden bg-gradient-to-br from-black via-[#0f0b0b] to-[#b91c1c]">
       {/* Hero Section with Gradient Background */}
       <section className="relative min-h-[80vh] flex items-center pt-24 mb-16 overflow-hidden">
         {/* Gradient Background */}

@@ -52,7 +52,7 @@ export default function TrainingPage() {
   ]
 
   return (
-    <main className="text-white" style={{ fontFamily: 'NeueMontreal, Aeonik, new, sans-serif' }}>
+    <main className="text-white">
       {/* HERO / INTRO with Video */}
       <section className="relative min-h-[70vh] pt-28 pb-16 flex items-end overflow-hidden">
         <div className="absolute inset-0 -z-20 overflow-hidden">

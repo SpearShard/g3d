@@ -212,7 +212,7 @@ export default function IndustriesPage() {
   )
 
   return (
-    <main className="text-white" style={{ fontFamily: 'dena, sans-serif' }}>
+    <main className="text-white">
       {/* Page intro */}
       <section className="relative pt-28 pb-16">
         <div className="absolute inset-0 -z-10">
@@ -222,7 +222,7 @@ export default function IndustriesPage() {
           <div className="absolute -inset-48 bg-[radial-gradient(900px_circle_at_20%_5%,rgba(185,28,28,0.25),transparent_60%)]" />
         </div>
         <div className="container mx-auto px-6">
-          <h1 className="text-5xl md:text-7xl font-['Dena'] mb-4">Industries We Serve</h1>
+          <h1 className="text-5xl md:text-7xl font-['dena'] mb-4">Industries We Serve</h1>
           <p className="text-lg md:text-xl text-red-50/90 max-w-3xl">From aerospace to medical, we bring production-ready additive manufacturing with the right process, material, and quality controls for each sector.</p>
         </div>
       </section>

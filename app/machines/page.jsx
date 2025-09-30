@@ -6,7 +6,7 @@ import { motion } from "motion/react"
 
 export default function MachinesPage() {
   return (
-    <main className="text-white" style={{ fontFamily: 'NeueMontreal, Aeonik, new, sans-serif' }}>
+    <main className="text-white">
       {/* HERO / INTRO */}
       <section className="relative min-h-[70vh] pt-28 pb-20 flex items-end overflow-hidden">
         {/* Background video */}

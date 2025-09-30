@@ -7,9 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // fontFamily: {
-      //   'new': ['new', 'sans-serif'],
-      // },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+        // keep existing keys if anything else relies on them
+      },
+      // Make Montserrat the default sans for utility classes if needed
+      // Tailwind's default 'sans' can be overridden globally by adding it here
+      // (some projects prefer to set this in a global CSS, we import Montserrat in globals.css)
       colors: {
         'background': '#0f0f0f',
         'primary': '#ff3131', // Bright red

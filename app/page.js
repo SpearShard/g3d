@@ -41,7 +41,7 @@ export default function Home() {
     }
   }
   return (
-    <div className="min-h-screen text-white relative overflow-hidden bg-gradient-to-br from-black via-[#0f0b0b] to-[#b91c1c]" style={{ fontFamily: 'NeueMontreal, Aeonik, new, sans-serif' }}>
+    <div className="min-h-screen text-white relative overflow-hidden bg-gradient-to-br from-black via-[#0f0b0b] to-[#b91c1c]">
       {/* Hero Banner */}
       <section className="relative min-h-[100svh] md:min-h-screen flex items-center pt-24">
         <div className="absolute inset-0 z-0 overflow-hidden">
